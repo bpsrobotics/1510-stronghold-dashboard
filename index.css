@@ -1,0 +1,138 @@
+html {
+    background-color: #000055;
+    color: #BBBBBB;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+img.livestream {
+    width: 320px;
+    height: 240px;
+    margin: 0;
+    padding: 5px;
+    float: left;
+    border-style: solid;
+    border-size: 2px;
+    border-color: #BB0000;
+}
+
+.center {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.center-small {
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+}
+
+img.livestream#shooter {
+    float: right;
+    border-color: #BB0000;
+}
+
+.abs-size {
+    width: 40%;
+}
+
+#livestreams {
+    width: 80%;
+    margin: auto;
+}
+
+.refresh {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+button {
+    color: #BBBBBB;
+    background-color: #BB0000;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-size: 2px;
+    border-style: solid;
+    border-color: #BB0000;
+    font-family: sans-serif;
+}
+
+button.refresh:hover {
+    background-color: white;
+    color: #BB0000;
+    border-color: #BB0000;
+    border-size: 2px;
+    border-style: solid;
+}
+
+main {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.category {
+    margin: auto;
+    width: 33.3%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.limitSwitchOff {
+    background-color: #880000;
+    color: #BBBBBB;
+    border-color: #0000BB;
+}
+
+.limitSwitchOn {
+    background-color: #008800;
+    color: #BBBBBB;
+    border-color: #0000BB;
+}
+
+div.clear {
+    clear: both;
+}
+
+h2 {
+    text-align: center;
+}
+
+select[name="selection"] {
+    display: inline-block;
+    height:30px;
+    width: 150px;
+    padding: 2px 10px 2px 2px;
+    outline: none;
+    color: #74646e;
+    border-size: 0;
+    border-radius: 0;
+    box-shadow: inset 1px 1px 2px #ddd8dc;
+    background: #BB0000;
+}
+
+.selection {
+    width: 128px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 10px;
+}
