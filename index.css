@@ -12,9 +12,8 @@ h1 {
 img.livestream {
     width: 320px;
     height: 240px;
-    margin: 0;
+	margin-left: 35%;
     padding: 5px;
-    float: left;
     border-style: solid;
     border-size: 2px;
     border-color: #BB0000;
@@ -51,7 +50,11 @@ img.livestream#shooter {
     right: 10px;
     bottom: 10px;
 }
-
+.toggle_camera {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
 button {
     color: #BBBBBB;
     background-color: #BB0000;
@@ -60,14 +63,14 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     border-size: 2px;
     border-style: solid;
     border-color: #BB0000;
     font-family: sans-serif;
 }
 
-button.refresh:hover {
+button.refresh:hover, button.toggle_camera:hover {
     background-color: white;
     color: #BB0000;
     border-color: #BB0000;

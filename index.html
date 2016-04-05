@@ -4,23 +4,28 @@
   <head>
     <title>1510 Dashboard 2016</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+	
   </head>
 
   <body>
+
+	
+
     <h1>FRC Team 1510 Dashboard</h1>
 
     <button class="refresh" type="button" onclick="refresh()">REFRESH</button>
+	<button class="toggle_camera" type="button" onclick = "switchCameraMode()">CAMERA MODE</button>
 
     <div id="livestreams">
-      <img class="livestream" id="forward" src="http://roborio-1510-frc.local:1180/" onerror="this.src='images/connection-error.png'">
-      <img class="livestream" id="shooter" src="http://10.15.10.11/mjpeg" onerror="this.src='images/connection-error.png'">
+      <img class="livestream" id="camera" src="http://roborio-1510-frc.local:1180/"  onerror="this.src='images/connection-error.png'">
+      <!-- <img class="livestream" id="shooter" src="http://10.15.10.11/mjpeg" onerror="this.src='images/connection-error.png'"> -->
       <!-- 1510-imageprocessor.local:1180/mjpeg -->
     </div>
     <div class="clear"></div>
     <main>
       <form id="autonomous-selection" class="category">
 	<h2>Autonomous selection</h2>
-	<input type="radio" name="autonomous" value="NOTHING" id="NOTHING"> Do nothing<br>
+	<input type="radio" name="autonomous" value="NOTHING" id="NOTHING" checked> Do nothing<br>
 	<input type="radio" name="autonomous" value="SPYBOT" id="SPYBOT"> Spy bot<br>
 	<input type="radio" name="autonomous" value="ROUGH_TERRAIN" id="ROUGH_TERRAIN"> Move forward<br>
 	<input type="radio" name="autonomous" value="LOW_BAR" id="LOW_BAR"> Low bar<br>
@@ -44,6 +49,6 @@
 	<button class="right abs-size limitSwitchOff" type="button" id="Right Encoder" disabled>0.0</button>
       </div>
     </main>
-    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script.js"></script>
   </body>
 </html>

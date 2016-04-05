@@ -40,7 +40,30 @@ function getSelectedAutonomous() {
 }
 
 function refresh() {
-    document.getElementById("forward").src = "http://roborio-1510-frc.local:1180";
-    
-    document.getElementById("shooter").src = "http://axis-camera.local/mjpeg";
+    document.getElementById("camera").src = modes[currentMode];
+}
+
+var currentMode = 1;
+
+var modes = [
+	"",
+	"http://roborio-1510-frc.local:1180",
+	"http://10.15.10.11/mjpeg",
+	"http://1510-imageprocessor.local:1180/mjpeg"
+];
+
+function switchCameraMode(){
+	currentMode++;
+	if(currentMode > 3){
+		currentMode = 1;
+	}
+	var camera = document.getElementById("camera");
+	if( currentMode === 1){
+		camera.src = "http://roborio-1510-frc.local:1180/";
+	}else if( currentMode === 2){
+		camera.src = "http://10.15.10.11/mjpeg";
+	}else{
+		camera.src = "http://1510-imageprocessor.local:1180/mjpeg";
+	}
+		
 }
